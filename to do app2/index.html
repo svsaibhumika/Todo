@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>Todo List</h1>
+                <p>Keep it up!</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0 / 0</p>
+            </div>
+        </div>
+
+        <div class="priority-filter">
+            <label for="priorityFilter">Filter by Priority:</label>
+            <select id="priorityFilter">
+                <option value="All">All</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+        </div>
+
+
+        <form id="taskForm">
+            <input id="taskInput" type="text" placeholder="Task Title" required>
+            <input id="dueDate" type="date" placeholder="Due Date">
+            <select id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <input id="notes" type="text" placeholder="Notes">
+            <select id="recurrence">
+                <option value="None">None</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Custom">Custom</option>
+            </select>
+
+            <!-- 🔹 Add this subtask input -->
+            <input id="subtaskInput" type="text" placeholder="Add Subtask (press Enter)" />
+
+            <button id="newTask" type="submit">+</button>
+        </form>
+
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>
