@@ -24,16 +24,16 @@ git clone https://github.com/svsaibhumika/Todo.git
 3. Start adding and managing your tasks.
 
 # Usage
-**1. Add a Task:**
+1. **Add a Task:**
    - Enter the task title.
    - Select a due date.
    - Set priority (Low, Medium, High).
    - Add notes or subtasks if needed.
    - Press the + button to save the task.
-**2. Filter by Priority:**
+2. **Filter by Priority:**
    - Use the Filter by Priority dropdown to view tasks of a specific priority.
-**3.  Track Progress:**
+3.  **Track Progress:**
    - Monitor your completed vs total tasks in the progress circle at the top.
-**4. Edit/Delete Tasks:**
+4. **Edit/Delete Tasks:**
    - Click on a task to edit details.
    - Use the delete button to remove a task.
